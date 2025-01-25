@@ -21,6 +21,11 @@ ShaderProgram* ShaderProgramBuilder::build() {
     shaderProgram->vertexShader = ShaderFactory::createShader(vertexShaderSource, GL_VERTEX_SHADER);
     shaderProgram->fragmentShader = ShaderFactory::createShader(fragmentShaderSource, GL_FRAGMENT_SHADER);
 
+    if (!shaderProgram->checkShaders()) {
+        std::cerr << "Failled to compile shaders !" << std::endl;
+        return nullptr;
+    }
+
     shaderProgram->attachShaders();
     shaderProgram->link();
 

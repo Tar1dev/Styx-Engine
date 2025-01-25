@@ -10,3 +10,10 @@ void ShaderProgram::attachShaders() {
 void ShaderProgram::link() {
     glLinkProgram(programID);
 }
+
+bool ShaderProgram::checkShaders() {
+    if (vertexShader == 0 || fragmentShader == 0) {
+        return false;
+    }
+    return true;
+}

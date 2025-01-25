@@ -1,6 +1,6 @@
 #include <core/EngineFacade.hpp>
-#include <graphics/ShaderFactory.hpp>
 #include <graphics/ShaderProgramBuilder.hpp>
+#include <iostream>
 
 bool EngineFacade::initialize() {
     if (!WindowManager::getInstance().initialize(900, 800, "The perfect game engine !")) {
@@ -9,9 +9,15 @@ bool EngineFacade::initialize() {
 
     ShaderProgramBuilder builder;
     ShaderProgram* shaderProgram = builder
-        .setVertexShader("main.frag")
+        .setVertexShader("main.vert")
         .setFragmentShader("main.frag")
         .build();
+
+    if (shaderProgram == nullptr) {
+        shutdown();
+        return false;
+    }
+    
     
     std::cout << "Shader program ID: " << shaderProgram->getProgramID() << std::endl;
 

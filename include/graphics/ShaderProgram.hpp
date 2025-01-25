@@ -15,6 +15,7 @@ public:
     GLuint getProgramID() const { return programID; }
     void attachShaders();
     void link();
+    bool checkShaders();
     friend class ShaderProgramBuilder;
 };
 

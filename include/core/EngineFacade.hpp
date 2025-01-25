@@ -8,6 +8,7 @@ class EngineFacade
 public:
     bool initialize();
     void run();
+    bool shouldClose();
     void shutdown();
 };
 

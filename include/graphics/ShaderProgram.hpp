@@ -16,6 +16,7 @@ public:
     void attachShaders();
     void link();
     bool checkShaders();
+    void cleanShaders();
     friend class ShaderProgramBuilder;
 };
 

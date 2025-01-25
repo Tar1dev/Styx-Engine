@@ -28,6 +28,7 @@ ShaderProgram* ShaderProgramBuilder::build() {
 
     shaderProgram->attachShaders();
     shaderProgram->link();
+    shaderProgram->cleanShaders();
 
     return shaderProgram;
 }

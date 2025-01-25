@@ -1,11 +1,6 @@
-#include <core/EngineFacade.hpp>
+#include <game/Game.hpp>
 
 int main(int argc, char const *argv[])
 {
-    EngineFacade engine;
-
-    engine.initialize();
-    engine.run();
-    engine.shutdown();
-    return 0;
+    Game::getInstance().run();
 }

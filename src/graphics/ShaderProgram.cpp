@@ -17,3 +17,8 @@ bool ShaderProgram::checkShaders() {
     }
     return true;
 }
+
+void ShaderProgram::cleanShaders() {
+    glDeleteShader(vertexShader);
+    glDeleteShader(fragmentShader); 
+}

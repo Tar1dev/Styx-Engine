@@ -6,7 +6,9 @@
 
 
 
-RendererManager::RendererManager() {
+RendererManager::RendererManager() {}
+
+bool RendererManager::initialize(int width, int height) {
     // default shaders
     ShaderProgramBuilder builder;
     shaderProgram = builder
@@ -16,6 +18,8 @@ RendererManager::RendererManager() {
 
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    glDisable(GL_DEPTH_TEST);
 
     glGenBuffers(1, &VBO);
     glGenVertexArrays(1, &VAO);
@@ -38,8 +42,13 @@ RendererManager::RendererManager() {
 
     glBindVertexArray(0); // Unbind the VAO
 
-    stbi_set_flip_vertically_on_load(true);  
-}
+    stbi_set_flip_vertically_on_load(true);     
+
+    camera.projection = glm::ortho(0.0f, (float)width, 0.0f, (float)height, 0.0f, 100.0f);
+    camera.view = glm::translate(camera.view, glm::vec3(0.0f, 0.0f, -2.0f));
+
+    return true;
+} 
 
 void RendererManager::clear() {
     glClearColor(0.5, 0.5, 0.5, 1);
@@ -49,10 +58,10 @@ void RendererManager::clear() {
 void RendererManager::update() {
     float vertices[] = {
         // positions          // colors           // texture coords
-        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
-        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // bottom right
-        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // bottom left
-        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // top left 
+        150.0f,  150.0f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
+        150.0f, 0.0f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // bottom right
+        0.0f, 0.0f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // bottom left
+        0.0f,  150.0f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // top left 
     };
     unsigned int indices[] = {  
         0, 1, 3, // first triangle
@@ -70,12 +79,22 @@ void RendererManager::update() {
     glBindVertexArray(VAO);
 }
 
-void RendererManager::drawTexture(Texture2D texture, glm::vec2 coords) {
-    glm::mat4 trans = texture.getTransform();
-    trans = glm::translate(trans, glm::vec3(coords.x, coords.y, 0.0f));
+void RendererManager::updateAspectRatio(int width, int height) {
+    camera.projection = glm::ortho(0.0f, (float)width, 0.0f, (float)height, 0.0f, 100.0f);
+}
 
-    unsigned int transformLoc = glGetUniformLocation(shaderProgram->getProgramID(), "transform");
-    glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+void RendererManager::drawTexture(Texture2D texture, glm::vec2 coords) {
+    glm::mat4 model = texture.getTransform();
+    model = glm::translate(model, glm::vec3(coords.x, coords.y, 0.0f));
+
+    unsigned int modelLoc = glGetUniformLocation(shaderProgram->getProgramID(), "model");
+    unsigned int projectionLoc = glGetUniformLocation(shaderProgram->getProgramID(), "projection");
+    unsigned int viewLoc = glGetUniformLocation(shaderProgram->getProgramID(), "view");
+
+
+    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(camera.projection));
+    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(camera.view));
 
     glBindTexture(GL_TEXTURE_2D, texture.getTextureId());
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);

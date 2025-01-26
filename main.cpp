@@ -11,6 +11,9 @@ int main(int argc, char const *argv[])
     }
 
     auto& renderer = RendererManager::getInstance();
+    renderer.initialize(900, 800);
+
+    wm.setRenderer(&renderer);
 
     Texture2D box = Texture2D();
     box.loadFromFile("./assets/textures/container.jpg");

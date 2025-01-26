@@ -7,17 +7,27 @@
 #include <dll_export.h>
 
 
+typedef struct DLL_EXPORT Camera
+{
+    glm::mat4 projection;
+    glm::mat4 view;
+} Camera;
+
+
 class DLL_EXPORT RendererManager
 {
 private:
     RendererManager();
     GLuint VBO, VAO, EBO;
     ShaderProgram* shaderProgram;
+    Camera camera;
 public:
     static RendererManager& getInstance() {
         static RendererManager instance;
         return instance;
     }
+
+    bool initialize(int width, int height);
 
     void clear();
     void drawTriangle();
@@ -27,6 +37,7 @@ public:
     void drawTexture(Texture2D texture, glm::vec2 coords);
 
     void update();
+    void updateAspectRatio(int, int);
 };
 
 

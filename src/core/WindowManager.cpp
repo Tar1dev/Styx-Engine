@@ -1,6 +1,11 @@
 #include <core/WindowManager.hpp>
 #include <iostream>
 
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
+} 
+
 bool WindowManager::initialize(int width, int height, std::string title) {
     // init glfw
     if (!glfwInit()) {
@@ -31,6 +36,8 @@ bool WindowManager::initialize(int width, int height, std::string title) {
 
     glViewport(0, 0, width, height);
 
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);  
+
     return true;
 }
 
@@ -42,6 +49,7 @@ void WindowManager::shutdown() {
     glfwDestroyWindow(window);
     glfwTerminate();
 }
+
 
 
 void WindowManager::swapBuffers() const {

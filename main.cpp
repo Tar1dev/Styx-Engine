@@ -1,5 +1,6 @@
 #include <core/WindowManager.hpp>
 #include <graphics/RendererManager.hpp>
+#include <graphics/Texture2D.hpp>
 
 int main(int argc, char const *argv[])
 {
@@ -11,10 +12,16 @@ int main(int argc, char const *argv[])
 
     auto& renderer = RendererManager::getInstance();
 
+    unsigned int box = Texture2D::loadFromFile("./assets/textures/container.jpg");
+    unsigned int smile = Texture2D::loadFromFile("./assets/textures/awesomeface.png");
+
     while (!wm.shouldClose()) {
         renderer.clear();
 
-        renderer.drawTriangle();
+        renderer.update();
+
+        //renderer.drawTexture(box);
+        renderer.drawTexture(smile);
 
         wm.pollEvents();
         wm.swapBuffers();

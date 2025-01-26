@@ -1,7 +1,7 @@
 #if !defined(SHADER_PROGRAM_HPP)
 #define SHADER_PROGRAM_HPP
 
-#include <glad/glad.h>
+#include <3rdparty/glad/glad.h>
 #include <string>
 
 class ShaderProgram

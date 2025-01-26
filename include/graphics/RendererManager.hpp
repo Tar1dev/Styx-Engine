@@ -1,7 +1,6 @@
 #if !defined(RENDERER_MANAGER_HPP)
 #define RENDERER_MANAGER_HPP
 
-#include <glad/glad.h>
 #include <graphics/ShaderProgramBuilder.hpp>
 
 class RendererManager
@@ -18,7 +17,8 @@ public:
 
     void clear();
     void drawTriangle();
-    bool addShader(std::string vertexShaderSource, std::string fragmentShaderSource);
+    bool addShader(std::string vertexShaderSourcePath, std::string fragmentShaderSourcePath);
+    bool setCurrentShader(ShaderProgram shader);
 };
 
 

@@ -1,7 +1,7 @@
 # Variables
 CXX = g++
 INCLUDES = -I include
-LIBS = -L ./libs/GLFW -lglfw3 -lgdi32 -lopengl32 -luser32
+LIBS = -L ./libs/GLFW -lglfw3 -lgdi32 -lopengl32 
 SRC_DIR = src
 LIB_DIR = libs/glad
 BIN_DIR = build/debug

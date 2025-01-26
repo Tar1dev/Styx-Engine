@@ -21,8 +21,6 @@ public:
     void swapBuffers() const;
     bool shouldClose() const;
     void shutdown();
-    void render();
-    GLFWwindow* getGLFWWindow();
 };
 
 #endif // WINDOW_H

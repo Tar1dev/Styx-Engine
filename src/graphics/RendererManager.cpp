@@ -2,10 +2,11 @@
 
 
 RendererManager::RendererManager() {
+    // default shaders
     ShaderProgramBuilder builder;
     shaderProgram = builder
-        .setVertexShader("main.vert")
-        .setFragmentShader("main.frag")
+        .setVertexShader("./assets/shaders/main.vert")
+        .setFragmentShader("./assets/shaders/main.frag")
         .build();
 
     glGenBuffers(1, &VBO);

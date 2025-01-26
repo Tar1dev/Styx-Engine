@@ -5,8 +5,10 @@
 #include <3rdparty/GLFW/glfw3.h>
 #include <string>
 
+#include <dll_export.h>
 
-class WindowManager
+
+class DLL_EXPORT WindowManager
 {
 private:
     GLFWwindow* window;

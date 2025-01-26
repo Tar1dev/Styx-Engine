@@ -4,9 +4,7 @@
 #include <math.h>
 #include <iostream>
 
-#include <3rdparty/glm/glm.hpp>
-#include <3rdparty/glm/gtc/matrix_transform.hpp>
-#include <3rdparty/glm/gtc/type_ptr.hpp>
+
 
 RendererManager::RendererManager() {
     // default shaders
@@ -72,14 +70,13 @@ void RendererManager::update() {
     glBindVertexArray(VAO);
 }
 
-void RendererManager::drawTexture(unsigned int texture) {
-    glm::mat4 trans = glm::mat4(1.0f);
-    trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
-    trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+void RendererManager::drawTexture(Texture2D texture, glm::vec2 coords) {
+    glm::mat4 trans = texture.getTransform();
+    trans = glm::translate(trans, glm::vec3(coords.x, coords.y, 0.0f));
 
     unsigned int transformLoc = glGetUniformLocation(shaderProgram->getProgramID(), "transform");
     glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
 
-    glBindTexture(GL_TEXTURE_2D, texture);
+    glBindTexture(GL_TEXTURE_2D, texture.getTextureId());
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }

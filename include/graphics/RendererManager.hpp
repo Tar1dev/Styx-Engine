@@ -2,9 +2,12 @@
 #define RENDERER_MANAGER_HPP
 
 #include <graphics/ShaderProgramBuilder.hpp>
-#include <vector>
+#include <graphics/Texture2D.hpp>
 
-class RendererManager
+#include <dll_export.h>
+
+
+class DLL_EXPORT RendererManager
 {
 private:
     RendererManager();
@@ -21,7 +24,7 @@ public:
     bool addShader(std::string vertexShaderSourcePath, std::string fragmentShaderSourcePath);
     bool setCurrentShader(ShaderProgram shader);
 
-    void drawTexture(unsigned int texture);
+    void drawTexture(Texture2D texture, glm::vec2 coords);
 
     void update();
 };

@@ -12,17 +12,23 @@ int main(int argc, char const *argv[])
 
     auto& renderer = RendererManager::getInstance();
 
-    unsigned int box = Texture2D::loadFromFile("./assets/textures/container.jpg");
-    unsigned int smile = Texture2D::loadFromFile("./assets/textures/awesomeface.png");
+    Texture2D box = Texture2D();
+    box.loadFromFile("./assets/textures/container.jpg");
+    
+    Texture2D smile = Texture2D();
+    smile.loadFromFile("./assets/textures/awesomeface.png");
+
 
     while (!wm.shouldClose()) {
         renderer.clear();
 
         renderer.update();
 
-        //renderer.drawTexture(box);
-        renderer.drawTexture(smile);
 
+        renderer.drawTexture(box, glm::vec2(0.f, 0.f));
+        renderer.drawTexture(smile, glm::vec2(-0.5f, -0.5f));
+
+    
         wm.pollEvents();
         wm.swapBuffers();
     }

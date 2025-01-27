@@ -34,10 +34,8 @@ public:
         if (width == 0 || height == 0) {
             return;
         }
-        auto* manager = static_cast<WindowManager*>(glfwGetWindowUserPointer(window));
-        if (manager) {
-            manager->onFramebufferSizeChanged(width, height);
-        }
+        auto manager = WindowManager::getInstance();
+        manager.onFramebufferSizeChanged(width, height);
     }
 
     void onFramebufferSizeChanged(int width, int height) {

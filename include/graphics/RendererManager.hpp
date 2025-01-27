@@ -34,7 +34,7 @@ public:
     bool addShader(std::string vertexShaderSourcePath, std::string fragmentShaderSourcePath);
     bool setCurrentShader(ShaderProgram shader);
 
-    void drawTexture(Texture2D texture, glm::vec2 coords);
+    void drawTests(Texture2D texture, Texture2D, glm::vec2 coords);
 
     void update();
     void updateAspectRatio(int, int);

@@ -28,8 +28,8 @@ int main(int argc, char const *argv[])
         renderer.update();
 
 
-        renderer.drawTexture(box, glm::vec2(0.f, 0.f));
-        renderer.drawTexture(smile, glm::vec2(-0.5f, -0.5f));
+        // renderer.drawTexture(box, glm::vec2(0.f, 0.f));
+        renderer.drawTests(smile, box, glm::vec2(-0.5f, -0.5f));
 
     
         wm.pollEvents();

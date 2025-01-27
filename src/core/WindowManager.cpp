@@ -9,8 +9,8 @@ bool WindowManager::initialize(int width, int height, std::string title) {
         return false;
     }
 
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_CORE_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 
@@ -33,6 +33,8 @@ bool WindowManager::initialize(int width, int height, std::string title) {
     glViewport(0, 0, width, height);
 
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);  
+
+    std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
 
     return true;
 }

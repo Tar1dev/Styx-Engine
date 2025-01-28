@@ -1,13 +1,13 @@
 #if !defined(TEXTURE_2D_HPP)
 #define TEXTURE_2D_HPP
 
-#include <3rdparty/glad/glad.h>
-#include <3rdparty/stb_image.h>
+#include <glad/glad.h>
+#include <stb_image.h>
 #include <iostream>
 
-#include <3rdparty/glm/glm.hpp>
-#include <3rdparty/glm/gtc/matrix_transform.hpp>
-#include <3rdparty/glm/gtc/type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 #include <dll_export.h>
 

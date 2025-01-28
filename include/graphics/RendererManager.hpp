@@ -6,6 +6,10 @@
 
 #include <dll_export.h>
 
+#define GLM_FORCE_DEFAULT_ALIGNED_GENTYPES
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
 
 typedef struct DLL_EXPORT Camera
 {

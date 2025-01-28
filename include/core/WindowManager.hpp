@@ -1,13 +1,16 @@
 #if !defined(WINDOW_H)
 #define WINDOW_H
 
-#include <3rdparty/glad/glad.h>
-#include <3rdparty/GLFW/glfw3.h>
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 #include <string>
 #include <tuple>
 
 #include <graphics/RendererManager.hpp>
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 #include <dll_export.h>
 
@@ -17,8 +20,8 @@ class DLL_EXPORT WindowManager
 private:
     GLFWwindow* window;
     WindowManager();
-    RendererManager* renderer;
 public:
+    static RendererManager* renderer;
     static WindowManager& getInstance() {
         static WindowManager instance; // Lazy initialization, thread-safe
         return instance;
@@ -34,6 +37,7 @@ public:
         if (width == 0 || height == 0) {
             return;
         }
+
         auto manager = WindowManager::getInstance();
         manager.onFramebufferSizeChanged(width, height);
     }
@@ -41,7 +45,13 @@ public:
     void onFramebufferSizeChanged(int width, int height) {
         // Update the OpenGL viewport and inform the renderer
         glViewport(0, 0, width, height);
-        renderer->updateAspectRatio(width, height);
+        if (this->renderer)
+        {
+            renderer->updateAspectRatio(width, height);
+        } else {
+            std::cout << "renderer is a nullptr : " << this->renderer << std::endl;
+        }
+        
     }
 };
 

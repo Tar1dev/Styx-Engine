@@ -56,11 +56,14 @@ void WindowManager::pollEvents() const {
     glfwPollEvents();
 }
 
-WindowManager::WindowManager() {}
+WindowManager::WindowManager() {
+}
 
 GLFWwindow* WindowManager::getGLFWWindow() {
     return window;
 }
+
+RendererManager* WindowManager::renderer = nullptr;
 
 void WindowManager::setRenderer(RendererManager* renderer) {
     this->renderer = renderer;

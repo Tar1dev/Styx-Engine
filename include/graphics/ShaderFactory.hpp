@@ -1,7 +1,7 @@
 #if !defined(SHADER_FACTORY_HPP)
 #define SHADER_FACTORY_HPP
 
-#include <3rdparty/glad/glad.h>
+#include <glad/glad.h>
 #include <string>
 #include <iostream>
 

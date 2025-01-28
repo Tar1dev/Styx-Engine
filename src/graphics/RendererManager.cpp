@@ -1,10 +1,13 @@
 #include <graphics/RendererManager.hpp>
-#include <3rdparty/GLFW/glfw3.h>
-#include <3rdparty/stb_image.h>
+#include <GLFW/glfw3.h>
+#include <stb_image.h>
 #include <math.h>
 #include <iostream>
 
-RendererManager::RendererManager() {}
+RendererManager::RendererManager() {
+    camera.projection = glm::mat4(1.0f); // Identity matrix
+    camera.view = glm::mat4(1.0f);       // Identity matrix
+}
 
 bool RendererManager::initialize(int width, int height) {
     // default shaders

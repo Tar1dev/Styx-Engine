@@ -94,7 +94,7 @@ void RendererManager::update() {
     glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
     glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(camera.projection));
     glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(camera.view));
-    glUniform1iv(textureLoc, 2, samplers);
+    glUniform1iv(textureLoc, 16, samplers);
     
 
 
@@ -108,7 +108,6 @@ void RendererManager::update() {
     vertices.clear();
     indices.clear();
     textures.clear();
-    textureIndex = 0;
     indexOffset = 0;
 }
 
@@ -119,15 +118,17 @@ void RendererManager::drawTexture(Texture2D texture, glm::vec2 coords) {
     float w = 400;
     float h = 400;
 
-    textures.push_back(texture.getTextureId());
+    int textureIndex = textures.size();  // Store the current texture index before adding
+
+    textures.push_back(texture.getTextureId());  // Add texture to the list
 
 
     float quadVertices[] = {
         // positions  // colors          // texture coords // texture IDs;
-        x + w, y + h, 0.0f,  1.0f, 0.0f, 0.0f, 1.0f, 1.0f, textures.size(), // bottom right
-        x + w, y,     0.0f,  0.0f, 1.0f, 0.0f, 1.0f, 0.0f, textures.size(), // top right
-        x,     y + h, 0.0f,  0.0f, 0.0f, 1.0f, 0.0f, 1.0f, textures.size(), // bottom left
-        x,     y,     0.0f,  1.0f, 1.0f, 0.0f, 0.0f, 0.0f, textures.size()  // top left
+        x + w, y + h, 0.0f,  1.0f, 0.0f, 0.0f, 1.0f, 1.0f, textureIndex, // bottom right
+        x + w, y,     0.0f,  0.0f, 1.0f, 0.0f, 1.0f, 0.0f, textureIndex, // top right
+        x,     y + h, 0.0f,  0.0f, 0.0f, 1.0f, 0.0f, 1.0f, textureIndex, // bottom left
+        x,     y,     0.0f,  1.0f, 1.0f, 0.0f, 0.0f, 0.0f, textureIndex  // top left
     };
 
     unsigned int quadIndices[] = {

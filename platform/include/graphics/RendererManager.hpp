@@ -29,7 +29,6 @@ private:
     std::vector<float> vertices;
     std::vector<unsigned int> indices;
     int indexOffset = 0;
-    float textureIndex = 0;
     std::vector<GLuint> textures;
 public:
     static RendererManager& getInstance() {

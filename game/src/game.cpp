@@ -17,6 +17,7 @@ void initGame() {
 void updateGame(float dt) {
     renderer.drawTexture(box, glm::vec2(0, 0));
     renderer.drawTexture(smile, glm::vec2(400, 0));
+    renderer.drawTexture(smile, glm::vec2(0, 400));
 }
 
 void closeGame() {

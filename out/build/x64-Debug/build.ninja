@@ -49,51 +49,66 @@ cmake_ninja_workdir = C$:\Users\Nils\Desktop\graphics$ lib\out\build\x64-Debug\
 
 build cmake_object_order_depends_target_MaLibGraphique: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_stb_image
 
-build CMakeFiles\MaLibGraphique.dir\src\core\WindowManager.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\src\core\WindowManager.cpp || cmake_object_order_depends_target_MaLibGraphique
+build CMakeFiles\MaLibGraphique.dir\game\src\game.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\game\src\game.cpp || cmake_object_order_depends_target_MaLibGraphique
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
+  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
   OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\src\core
+  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\game\src
   TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
   TARGET_PDB = MaLibGraphique.pdb
 
-build CMakeFiles\MaLibGraphique.dir\src\graphics\RendererManager.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\src\graphics\RendererManager.cpp || cmake_object_order_depends_target_MaLibGraphique
+build CMakeFiles\MaLibGraphique.dir\platform\src\core\WindowManager.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\core\WindowManager.cpp || cmake_object_order_depends_target_MaLibGraphique
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
+  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
   OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\src\graphics
+  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\core
   TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
   TARGET_PDB = MaLibGraphique.pdb
 
-build CMakeFiles\MaLibGraphique.dir\src\graphics\ShaderProgram.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\src\graphics\ShaderProgram.cpp || cmake_object_order_depends_target_MaLibGraphique
+build CMakeFiles\MaLibGraphique.dir\platform\src\graphics\RendererManager.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\graphics\RendererManager.cpp || cmake_object_order_depends_target_MaLibGraphique
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
+  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
   OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\src\graphics
+  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\graphics
   TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
   TARGET_PDB = MaLibGraphique.pdb
 
-build CMakeFiles\MaLibGraphique.dir\src\graphics\ShaderProgramBuilder.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\src\graphics\ShaderProgramBuilder.cpp || cmake_object_order_depends_target_MaLibGraphique
+build CMakeFiles\MaLibGraphique.dir\platform\src\graphics\ShaderProgram.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\graphics\ShaderProgram.cpp || cmake_object_order_depends_target_MaLibGraphique
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
+  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
   OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\src\graphics
+  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\graphics
   TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
   TARGET_PDB = MaLibGraphique.pdb
 
-build CMakeFiles\MaLibGraphique.dir\src\graphics\Texture2D.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\src\graphics\Texture2D.cpp || cmake_object_order_depends_target_MaLibGraphique
+build CMakeFiles\MaLibGraphique.dir\platform\src\graphics\ShaderProgramBuilder.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\graphics\ShaderProgramBuilder.cpp || cmake_object_order_depends_target_MaLibGraphique
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
+  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
   OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\src\graphics
+  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\graphics
   TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
   TARGET_PDB = MaLibGraphique.pdb
 
-build CMakeFiles\MaLibGraphique.dir\main.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\main.cpp || cmake_object_order_depends_target_MaLibGraphique
+build CMakeFiles\MaLibGraphique.dir\platform\src\graphics\Texture2D.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\graphics\Texture2D.cpp || cmake_object_order_depends_target_MaLibGraphique
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
+  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
   OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir
+  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\graphics
+  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
+  TARGET_PDB = MaLibGraphique.pdb
+
+build CMakeFiles\MaLibGraphique.dir\platform\src\main.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\main.cpp || cmake_object_order_depends_target_MaLibGraphique
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
+  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
+  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
+  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src
   TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
   TARGET_PDB = MaLibGraphique.pdb
 
@@ -105,7 +120,7 @@ build CMakeFiles\MaLibGraphique.dir\main.cpp.obj: CXX_COMPILER__MaLibGraphique_u
 #############################################
 # Link the executable MaLibGraphique.exe
 
-build MaLibGraphique.exe: CXX_EXECUTABLE_LINKER__MaLibGraphique_Debug CMakeFiles\MaLibGraphique.dir\src\core\WindowManager.cpp.obj CMakeFiles\MaLibGraphique.dir\src\graphics\RendererManager.cpp.obj CMakeFiles\MaLibGraphique.dir\src\graphics\ShaderProgram.cpp.obj CMakeFiles\MaLibGraphique.dir\src\graphics\ShaderProgramBuilder.cpp.obj CMakeFiles\MaLibGraphique.dir\src\graphics\Texture2D.cpp.obj CMakeFiles\MaLibGraphique.dir\main.cpp.obj | 3rdparty\GLFW\src\glfw3.lib glad.lib stb_image.lib || 3rdparty\GLFW\src\glfw3.lib glad.lib stb_image.lib
+build MaLibGraphique.exe: CXX_EXECUTABLE_LINKER__MaLibGraphique_Debug CMakeFiles\MaLibGraphique.dir\game\src\game.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\core\WindowManager.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\graphics\RendererManager.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\graphics\ShaderProgram.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\graphics\ShaderProgramBuilder.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\graphics\Texture2D.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\main.cpp.obj | 3rdparty\GLFW\src\glfw3.lib glad.lib stb_image.lib || 3rdparty\GLFW\src\glfw3.lib glad.lib stb_image.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = 3rdparty\GLFW\src\glfw3.lib  opengl32.lib  glad.lib  stb_image.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -127,6 +142,7 @@ build MaLibGraphique.exe: CXX_EXECUTABLE_LINKER__MaLibGraphique_Debug CMakeFiles
 build cmake_object_order_depends_target_glad: phony || .
 
 build CMakeFiles\glad.dir\3rdparty\glad\src\glad.c.obj: C_COMPILER__glad_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\glad\src\glad.c || cmake_object_order_depends_target_glad
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include"
   OBJECT_DIR = CMakeFiles\glad.dir
@@ -162,6 +178,7 @@ build glad.lib: C_STATIC_LIBRARY_LINKER__glad_Debug CMakeFiles\glad.dir\3rdparty
 build cmake_object_order_depends_target_stb_image: phony || .
 
 build CMakeFiles\stb_image.dir\3rdparty\stb\stb_image.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\stb\stb_image.cpp || cmake_object_order_depends_target_stb_image
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
   OBJECT_DIR = CMakeFiles\stb_image.dir
@@ -326,7 +343,7 @@ build 3rdparty\GLFW\CMakeFiles\uninstall | ${cmake_ninja_workdir}3rdparty\GLFW\C
 build cmake_object_order_depends_target_glfw: phony || .
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\context.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -335,7 +352,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unsc
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\init.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -344,7 +361,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscann
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\input.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -353,7 +370,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscan
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\monitor.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -362,7 +379,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unsc
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\platform.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -371,7 +388,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_uns
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\vulkan.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -380,7 +397,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unsca
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\window.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -389,7 +406,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unsca
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\egl_context.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -398,7 +415,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\osmesa_context.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -407,7 +424,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__gl
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\null_init.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -416,7 +433,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_un
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\null_monitor.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -425,7 +442,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\null_window.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -434,7 +451,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\null_joystick.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -443,7 +460,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glf
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_module.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -452,7 +469,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_time.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -461,7 +478,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_u
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_thread.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -470,7 +487,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_init.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -479,7 +496,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_u
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_joystick.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -488,7 +505,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__gl
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_monitor.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -497,7 +514,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glf
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_window.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
@@ -506,7 +523,7 @@ build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
 build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\wgl_context.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
   INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir

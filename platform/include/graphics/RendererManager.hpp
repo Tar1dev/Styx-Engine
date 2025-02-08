@@ -6,9 +6,10 @@
 
 #include <dll_export.h>
 
-#define GLM_FORCE_DEFAULT_ALIGNED_GENTYPES
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+
+#include <vector>
 
 
 typedef struct DLL_EXPORT Camera
@@ -25,6 +26,11 @@ private:
     GLuint VBO, VAO, EBO;
     ShaderProgram* shaderProgram;
     Camera camera;
+    std::vector<float> vertices;
+    std::vector<unsigned int> indices;
+    int indexOffset = 0;
+    float textureIndex = 0;
+    std::vector<GLuint> textures;
 public:
     static RendererManager& getInstance() {
         static RendererManager instance;
@@ -34,11 +40,10 @@ public:
     bool initialize(int width, int height);
 
     void clear();
-    void drawTriangle();
     bool addShader(std::string vertexShaderSourcePath, std::string fragmentShaderSourcePath);
     bool setCurrentShader(ShaderProgram shader);
 
-    void drawTests(Texture2D texture, Texture2D, glm::vec2 coords);
+    void drawTexture(Texture2D texture, glm::vec2 coords);
 
     void update();
     void updateAspectRatio(int, int);

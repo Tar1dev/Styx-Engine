@@ -4,11 +4,16 @@ project(MaLibGraphique)
 
 set(CMAKE_CXX_STANDARD 20)
 
-file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} src/*.cpp)
-list(APPEND SOURCES main.cpp)
-file(GLOB_RECURSE HEADERS RELATIVE ${CMAKE_SOURCE_DIR} include/*.h*)
+file(GLOB_RECURSE GAME_SOURCES RELATIVE ${CMAKE_SOURCE_DIR} game/src/*.cpp)
+file(GLOB_RECURSE PLATFORM_SOURCES RELATIVE ${CMAKE_SOURCE_DIR} platform/src/*.cpp)
 
-add_executable(MaLibGraphique ${SOURCES} ${HEADERS})
+add_executable(MaLibGraphique ${GAME_SOURCES} ${PLATFORM_SOURCES})
+
+target_include_directories(MaLibGraphique PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/game/include")
+target_include_directories(MaLibGraphique PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/platform/include")
+
+add_compile_definitions(RESSOURCES_DIR="${CMAKE_SOURCE_DIR}/ressources")
+
 
 # Inclure les dépendances
 find_package(OpenGL REQUIRED)

@@ -1,5 +1,5 @@
 #pragma once
-#include <graphics/RendererManager.hpp>
+#include <graphics/Renderer.hpp>
 
 void initGame();
 

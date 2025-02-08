@@ -1,6 +1,8 @@
 #include <core/WindowManager.hpp>
-#include <graphics/RendererManager.hpp>
+#include <graphics/Renderer.hpp>
 #include <iostream>
+
+using namespace Styx;
 
 bool WindowManager::initialize(int width, int height, std::string title) {
     // init glfw
@@ -63,8 +65,8 @@ GLFWwindow* WindowManager::getGLFWWindow() {
     return window;
 }
 
-RendererManager* WindowManager::renderer = nullptr;
+Renderer* WindowManager::renderer = nullptr;
 
-void WindowManager::setRenderer(RendererManager* renderer) {
+void WindowManager::setRenderer(Renderer* renderer) {
     this->renderer = renderer;
 }

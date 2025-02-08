@@ -1,5 +1,7 @@
 #include <graphics/Texture2D.hpp>
 
+using namespace Styx;
+
 Texture2D::Texture2D() {
     trans = glm::mat4(1.0f);
 }

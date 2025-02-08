@@ -1,15 +1,17 @@
-#include <graphics/RendererManager.hpp>
+#include <graphics/Renderer.hpp>
 #include <GLFW/glfw3.h>
 #include <stb_image.h>
 #include <math.h>
 #include <iostream>
 
-RendererManager::RendererManager() {
+using namespace Styx;
+
+Renderer::Renderer() {
     camera.projection = glm::mat4(1.0f); // Identity matrix
     camera.view = glm::mat4(1.0f);       // Identity matrix
 }
 
-bool RendererManager::initialize(int width, int height) {
+bool Renderer::initialize(int width, int height) {
     // default shaders
     ShaderProgramBuilder builder;
     shaderProgram = builder
@@ -57,17 +59,17 @@ bool RendererManager::initialize(int width, int height) {
     return true;
 }
 
-void RendererManager::clear() {
+void Renderer::clear() {
     glClearColor(0.0, 0.0, 0.0, 1);
     glClear(GL_COLOR_BUFFER_BIT);
 }
 
-void RendererManager::updateAspectRatio(int width, int height) {
+void Renderer::updateAspectRatio(int width, int height) {
     camera.projection = glm::ortho(0.0f, (float)width, (float)height, 0.0f, 0.0f, 100.0f);
 }
 
 
-void RendererManager::update() {
+void Renderer::update() {
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), vertices.data(), GL_DYNAMIC_DRAW);
@@ -105,6 +107,10 @@ void RendererManager::update() {
     // todo: textures batch rendering
 
     // Clear batch data for next frame
+    resetBatchCache();
+}
+
+void Renderer::resetBatchCache() {
     vertices.clear();
     indices.clear();
     textures.clear();
@@ -112,7 +118,7 @@ void RendererManager::update() {
 }
 
 
-void RendererManager::drawTexture(Texture2D texture, glm::vec2 coords) {
+void Renderer::drawTexture(Texture2D texture, glm::vec2 coords) {
     float x = coords.x;
     float y = coords.y;
     float w = 400;
@@ -125,10 +131,10 @@ void RendererManager::drawTexture(Texture2D texture, glm::vec2 coords) {
 
     float quadVertices[] = {
         // positions  // colors          // texture coords // texture IDs;
-        x + w, y + h, 0.0f,  1.0f, 0.0f, 0.0f, 1.0f, 1.0f, textureIndex, // bottom right
-        x + w, y,     0.0f,  0.0f, 1.0f, 0.0f, 1.0f, 0.0f, textureIndex, // top right
-        x,     y + h, 0.0f,  0.0f, 0.0f, 1.0f, 0.0f, 1.0f, textureIndex, // bottom left
-        x,     y,     0.0f,  1.0f, 1.0f, 0.0f, 0.0f, 0.0f, textureIndex  // top left
+        x + w, y + h, 0.0f,  1.0f, 0.0f, 0.0f, 1.0f, 1.0f, (float)textureIndex, // bottom right
+        x + w, y,     0.0f,  0.0f, 1.0f, 0.0f, 1.0f, 0.0f, (float)textureIndex, // top right
+        x,     y + h, 0.0f,  0.0f, 0.0f, 1.0f, 0.0f, 1.0f, (float)textureIndex, // bottom left
+        x,     y,     0.0f,  1.0f, 1.0f, 0.0f, 0.0f, 0.0f, (float)textureIndex  // top left
     };
 
     unsigned int quadIndices[] = {

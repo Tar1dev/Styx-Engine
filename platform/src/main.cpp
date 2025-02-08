@@ -1,18 +1,18 @@
 #include <core/WindowManager.hpp>
-#include <graphics/RendererManager.hpp>
+#include <graphics/Renderer.hpp>
 #include <graphics/Texture2D.hpp>
 
 #include <game.hpp>
 
 int main(int argc, char const *argv[])
 {
-    auto& wm = WindowManager::getInstance();
+    auto& wm = Styx::WindowManager::getInstance();
     if (!wm.initialize(800, 800, "Game framework")) {
         wm.shutdown();
         return -1;
     }
 
-    auto& renderer = RendererManager::getInstance();
+    auto& renderer = Styx::Renderer::getInstance();
     renderer.initialize(800, 800);
 
     wm.setRenderer(&renderer);

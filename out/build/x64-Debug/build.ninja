@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: MaLibGraphique
+# Project: StyxEngine
 # Configurations: Debug
 # =============================================================================
 
@@ -39,98 +39,98 @@ include CMakeFiles\rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:\Users\Nils\Desktop\graphics$ lib\out\build\x64-Debug\
+cmake_ninja_workdir = C$:\Users\Nils\Desktop\Styx$ Engine\out\build\x64-Debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target MaLibGraphique
+# Object build statements for EXECUTABLE target StyxEngine
 
 
 #############################################
-# Order-only phony target for MaLibGraphique
+# Order-only phony target for StyxEngine
 
-build cmake_object_order_depends_target_MaLibGraphique: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_stb_image
+build cmake_object_order_depends_target_StyxEngine: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_stb_image
 
-build CMakeFiles\MaLibGraphique.dir\game\src\game.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\game\src\game.cpp || cmake_object_order_depends_target_MaLibGraphique
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\StyxEngine.dir\game\src\game.cpp.obj: CXX_COMPILER__StyxEngine_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\game\src\game.cpp || cmake_object_order_depends_target_StyxEngine
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
-  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\game\src
-  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
-  TARGET_PDB = MaLibGraphique.pdb
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\game\include" -I"C:\Users\Nils\Desktop\Styx Engine\platform\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glm" -I"C:\Users\Nils\Desktop\Styx Engine\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\stb"
+  OBJECT_DIR = CMakeFiles\StyxEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\StyxEngine.dir\game\src
+  TARGET_COMPILE_PDB = CMakeFiles\StyxEngine.dir\
+  TARGET_PDB = StyxEngine.pdb
 
-build CMakeFiles\MaLibGraphique.dir\platform\src\core\WindowManager.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\core\WindowManager.cpp || cmake_object_order_depends_target_MaLibGraphique
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\StyxEngine.dir\platform\src\core\WindowManager.cpp.obj: CXX_COMPILER__StyxEngine_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\platform\src\core\WindowManager.cpp || cmake_object_order_depends_target_StyxEngine
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
-  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
-  TARGET_PDB = MaLibGraphique.pdb
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\game\include" -I"C:\Users\Nils\Desktop\Styx Engine\platform\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glm" -I"C:\Users\Nils\Desktop\Styx Engine\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\stb"
+  OBJECT_DIR = CMakeFiles\StyxEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\StyxEngine.dir\platform\src\core
+  TARGET_COMPILE_PDB = CMakeFiles\StyxEngine.dir\
+  TARGET_PDB = StyxEngine.pdb
 
-build CMakeFiles\MaLibGraphique.dir\platform\src\graphics\RendererManager.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\graphics\RendererManager.cpp || cmake_object_order_depends_target_MaLibGraphique
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\StyxEngine.dir\platform\src\graphics\RendererManager.cpp.obj: CXX_COMPILER__StyxEngine_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\platform\src\graphics\RendererManager.cpp || cmake_object_order_depends_target_StyxEngine
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
-  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\graphics
-  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
-  TARGET_PDB = MaLibGraphique.pdb
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\game\include" -I"C:\Users\Nils\Desktop\Styx Engine\platform\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glm" -I"C:\Users\Nils\Desktop\Styx Engine\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\stb"
+  OBJECT_DIR = CMakeFiles\StyxEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\StyxEngine.dir\platform\src\graphics
+  TARGET_COMPILE_PDB = CMakeFiles\StyxEngine.dir\
+  TARGET_PDB = StyxEngine.pdb
 
-build CMakeFiles\MaLibGraphique.dir\platform\src\graphics\ShaderProgram.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\graphics\ShaderProgram.cpp || cmake_object_order_depends_target_MaLibGraphique
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\StyxEngine.dir\platform\src\graphics\ShaderProgram.cpp.obj: CXX_COMPILER__StyxEngine_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\platform\src\graphics\ShaderProgram.cpp || cmake_object_order_depends_target_StyxEngine
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
-  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\graphics
-  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
-  TARGET_PDB = MaLibGraphique.pdb
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\game\include" -I"C:\Users\Nils\Desktop\Styx Engine\platform\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glm" -I"C:\Users\Nils\Desktop\Styx Engine\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\stb"
+  OBJECT_DIR = CMakeFiles\StyxEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\StyxEngine.dir\platform\src\graphics
+  TARGET_COMPILE_PDB = CMakeFiles\StyxEngine.dir\
+  TARGET_PDB = StyxEngine.pdb
 
-build CMakeFiles\MaLibGraphique.dir\platform\src\graphics\ShaderProgramBuilder.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\graphics\ShaderProgramBuilder.cpp || cmake_object_order_depends_target_MaLibGraphique
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\StyxEngine.dir\platform\src\graphics\ShaderProgramBuilder.cpp.obj: CXX_COMPILER__StyxEngine_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\platform\src\graphics\ShaderProgramBuilder.cpp || cmake_object_order_depends_target_StyxEngine
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
-  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\graphics
-  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
-  TARGET_PDB = MaLibGraphique.pdb
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\game\include" -I"C:\Users\Nils\Desktop\Styx Engine\platform\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glm" -I"C:\Users\Nils\Desktop\Styx Engine\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\stb"
+  OBJECT_DIR = CMakeFiles\StyxEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\StyxEngine.dir\platform\src\graphics
+  TARGET_COMPILE_PDB = CMakeFiles\StyxEngine.dir\
+  TARGET_PDB = StyxEngine.pdb
 
-build CMakeFiles\MaLibGraphique.dir\platform\src\graphics\Texture2D.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\graphics\Texture2D.cpp || cmake_object_order_depends_target_MaLibGraphique
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\StyxEngine.dir\platform\src\graphics\Texture2D.cpp.obj: CXX_COMPILER__StyxEngine_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\platform\src\graphics\Texture2D.cpp || cmake_object_order_depends_target_StyxEngine
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
-  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src\graphics
-  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
-  TARGET_PDB = MaLibGraphique.pdb
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\game\include" -I"C:\Users\Nils\Desktop\Styx Engine\platform\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glm" -I"C:\Users\Nils\Desktop\Styx Engine\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\stb"
+  OBJECT_DIR = CMakeFiles\StyxEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\StyxEngine.dir\platform\src\graphics
+  TARGET_COMPILE_PDB = CMakeFiles\StyxEngine.dir\
+  TARGET_PDB = StyxEngine.pdb
 
-build CMakeFiles\MaLibGraphique.dir\platform\src\main.cpp.obj: CXX_COMPILER__MaLibGraphique_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\platform\src\main.cpp || cmake_object_order_depends_target_MaLibGraphique
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\StyxEngine.dir\platform\src\main.cpp.obj: CXX_COMPILER__StyxEngine_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\platform\src\main.cpp || cmake_object_order_depends_target_StyxEngine
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\game\include" -I"C:\Users\Nils\Desktop\graphics lib\platform\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glm" -I"C:\Users\Nils\Desktop\graphics lib\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
-  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
-  OBJECT_FILE_DIR = CMakeFiles\MaLibGraphique.dir\platform\src
-  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
-  TARGET_PDB = MaLibGraphique.pdb
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\game\include" -I"C:\Users\Nils\Desktop\Styx Engine\platform\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glm" -I"C:\Users\Nils\Desktop\Styx Engine\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glad\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\stb"
+  OBJECT_DIR = CMakeFiles\StyxEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\StyxEngine.dir\platform\src
+  TARGET_COMPILE_PDB = CMakeFiles\StyxEngine.dir\
+  TARGET_PDB = StyxEngine.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target MaLibGraphique
+# Link build statements for EXECUTABLE target StyxEngine
 
 
 #############################################
-# Link the executable MaLibGraphique.exe
+# Link the executable StyxEngine.exe
 
-build MaLibGraphique.exe: CXX_EXECUTABLE_LINKER__MaLibGraphique_Debug CMakeFiles\MaLibGraphique.dir\game\src\game.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\core\WindowManager.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\graphics\RendererManager.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\graphics\ShaderProgram.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\graphics\ShaderProgramBuilder.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\graphics\Texture2D.cpp.obj CMakeFiles\MaLibGraphique.dir\platform\src\main.cpp.obj | 3rdparty\GLFW\src\glfw3.lib glad.lib stb_image.lib || 3rdparty\GLFW\src\glfw3.lib glad.lib stb_image.lib
+build StyxEngine.exe: CXX_EXECUTABLE_LINKER__StyxEngine_Debug CMakeFiles\StyxEngine.dir\game\src\game.cpp.obj CMakeFiles\StyxEngine.dir\platform\src\core\WindowManager.cpp.obj CMakeFiles\StyxEngine.dir\platform\src\graphics\RendererManager.cpp.obj CMakeFiles\StyxEngine.dir\platform\src\graphics\ShaderProgram.cpp.obj CMakeFiles\StyxEngine.dir\platform\src\graphics\ShaderProgramBuilder.cpp.obj CMakeFiles\StyxEngine.dir\platform\src\graphics\Texture2D.cpp.obj CMakeFiles\StyxEngine.dir\platform\src\main.cpp.obj | 3rdparty\GLFW\src\glfw3.lib glad.lib stb_image.lib || 3rdparty\GLFW\src\glfw3.lib glad.lib stb_image.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = 3rdparty\GLFW\src\glfw3.lib  opengl32.lib  glad.lib  stb_image.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\MaLibGraphique.dir
+  OBJECT_DIR = CMakeFiles\StyxEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\MaLibGraphique.dir\
-  TARGET_FILE = MaLibGraphique.exe
-  TARGET_IMPLIB = MaLibGraphique.lib
-  TARGET_PDB = MaLibGraphique.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\StyxEngine.dir\
+  TARGET_FILE = StyxEngine.exe
+  TARGET_IMPLIB = StyxEngine.lib
+  TARGET_PDB = StyxEngine.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target glad
@@ -141,10 +141,10 @@ build MaLibGraphique.exe: CXX_EXECUTABLE_LINKER__MaLibGraphique_Debug CMakeFiles
 
 build cmake_object_order_depends_target_glad: phony || .
 
-build CMakeFiles\glad.dir\3rdparty\glad\src\glad.c.obj: C_COMPILER__glad_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\glad\src\glad.c || cmake_object_order_depends_target_glad
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\glad.dir\3rdparty\glad\src\glad.c.obj: C_COMPILER__glad_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\glad\src\glad.c || cmake_object_order_depends_target_glad
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\glad\include"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\glad\include"
   OBJECT_DIR = CMakeFiles\glad.dir
   OBJECT_FILE_DIR = CMakeFiles\glad.dir\3rdparty\glad\src
   TARGET_COMPILE_PDB = CMakeFiles\glad.dir\glad.pdb
@@ -177,10 +177,10 @@ build glad.lib: C_STATIC_LIBRARY_LINKER__glad_Debug CMakeFiles\glad.dir\3rdparty
 
 build cmake_object_order_depends_target_stb_image: phony || .
 
-build CMakeFiles\stb_image.dir\3rdparty\stb\stb_image.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\stb\stb_image.cpp || cmake_object_order_depends_target_stb_image
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\""
+build CMakeFiles\stb_image.dir\3rdparty\stb\stb_image.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\stb\stb_image.cpp || cmake_object_order_depends_target_stb_image
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\""
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\stb"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\stb"
   OBJECT_DIR = CMakeFiles\stb_image.dir
   OBJECT_FILE_DIR = CMakeFiles\stb_image.dir\3rdparty\stb
   TARGET_COMPILE_PDB = CMakeFiles\stb_image.dir\stb_image.pdb
@@ -209,7 +209,7 @@ build stb_image.lib: CXX_STATIC_LIBRARY_LINKER__stb_image_Debug CMakeFiles\stb_i
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -220,7 +220,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Nils\Desktop\graphics lib" -B"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Nils\Desktop\Styx Engine" -B"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -238,7 +238,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles\install.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -250,7 +250,7 @@ build install: phony CMakeFiles\install.util
 # Utility command for install/local
 
 build CMakeFiles\install\local.util: CUSTOM_COMMAND all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -259,7 +259,7 @@ build install\local: phony CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Nils/Desktop/graphics lib/CMakeLists.txt
+# C:/Users/Nils/Desktop/Styx Engine/CMakeLists.txt
 # =============================================================================
 
 
@@ -273,7 +273,7 @@ build 3rdparty\GLFW\uninstall: phony 3rdparty\GLFW\CMakeFiles\uninstall
 # Utility command for edit_cache
 
 build 3rdparty\GLFW\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -284,7 +284,7 @@ build 3rdparty\GLFW\edit_cache: phony 3rdparty\GLFW\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build 3rdparty\GLFW\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Nils\Desktop\graphics lib" -B"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Nils\Desktop\Styx Engine" -B"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -302,7 +302,7 @@ build 3rdparty\GLFW\list_install_components: phony
 # Utility command for install
 
 build 3rdparty\GLFW\CMakeFiles\install.util: CUSTOM_COMMAND 3rdparty\GLFW\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -314,7 +314,7 @@ build 3rdparty\GLFW\install: phony 3rdparty\GLFW\CMakeFiles\install.util
 # Utility command for install/local
 
 build 3rdparty\GLFW\CMakeFiles\install\local.util: CUSTOM_COMMAND 3rdparty\GLFW\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -326,11 +326,11 @@ build 3rdparty\GLFW\install\local: phony 3rdparty\GLFW\CMakeFiles\install\local.
 # Custom command for 3rdparty\GLFW\CMakeFiles\uninstall
 
 build 3rdparty\GLFW\CMakeFiles\uninstall | ${cmake_ninja_workdir}3rdparty\GLFW\CMakeFiles\uninstall: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/Nils/Desktop/graphics lib/out/build/x64-Debug/3rdparty/GLFW/cmake_uninstall.cmake""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/Nils/Desktop/Styx Engine/out/build/x64-Debug/3rdparty/GLFW/cmake_uninstall.cmake""
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Nils/Desktop/graphics lib/3rdparty/GLFW/CMakeLists.txt
+# C:/Users/Nils/Desktop/Styx Engine/3rdparty/GLFW/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -342,190 +342,190 @@ build 3rdparty\GLFW\CMakeFiles\uninstall | ${cmake_ninja_workdir}3rdparty\GLFW\C
 
 build cmake_object_order_depends_target_glfw: phony || .
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\context.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\init.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\input.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\input.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\monitor.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\platform.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\platform.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\vulkan.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\vulkan.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\window.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\egl_context.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\egl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\osmesa_context.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\osmesa_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\null_init.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\null_init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\null_monitor.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\null_monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\null_window.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\null_window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\null_joystick.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\null_joystick.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_module.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\win32_module.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_time.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\win32_time.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_thread.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\win32_thread.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_init.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\win32_init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_joystick.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\win32_joystick.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_monitor.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\win32_monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\win32_window.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\win32_window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_PDB = 3rdparty\GLFW\src\glfw3.pdb
 
-build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\wgl_context.c || cmake_object_order_depends_target_glfw
-  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/graphics lib/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
+build 3rdparty\GLFW\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\wgl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -DRESSOURCES_DIR="\"C:/Users/Nils/Desktop/Styx Engine/ressources\"" -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
-  INCLUDES = -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src"
+  INCLUDES = -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\include" -I"C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" -I"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src"
   OBJECT_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = 3rdparty\GLFW\src\CMakeFiles\glfw.dir
   TARGET_COMPILE_PDB = 3rdparty\GLFW\src\CMakeFiles\glfw.dir\glfw.pdb
@@ -560,7 +560,7 @@ build 3rdparty\GLFW\src\update_mappings: phony 3rdparty\GLFW\src\CMakeFiles\upda
 # Utility command for edit_cache
 
 build 3rdparty\GLFW\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -571,7 +571,7 @@ build 3rdparty\GLFW\src\edit_cache: phony 3rdparty\GLFW\src\CMakeFiles\edit_cach
 # Utility command for rebuild_cache
 
 build 3rdparty\GLFW\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Nils\Desktop\graphics lib" -B"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Nils\Desktop\Styx Engine" -B"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -589,7 +589,7 @@ build 3rdparty\GLFW\src\list_install_components: phony
 # Utility command for install
 
 build 3rdparty\GLFW\src\CMakeFiles\install.util: CUSTOM_COMMAND 3rdparty\GLFW\src\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -601,7 +601,7 @@ build 3rdparty\GLFW\src\install: phony 3rdparty\GLFW\src\CMakeFiles\install.util
 # Utility command for install/local
 
 build 3rdparty\GLFW\src\CMakeFiles\install\local.util: CUSTOM_COMMAND 3rdparty\GLFW\src\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -613,12 +613,12 @@ build 3rdparty\GLFW\src\install\local: phony 3rdparty\GLFW\src\CMakeFiles\instal
 # Custom command for 3rdparty\GLFW\src\CMakeFiles\update_mappings
 
 build 3rdparty\GLFW\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}3rdparty\GLFW\src\CMakeFiles\update_mappings: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/Nils/Desktop/graphics lib/3rdparty/GLFW/CMake/GenerateMappings.cmake" mappings.h.in mappings.h"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\3rdparty\GLFW\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/Nils/Desktop/Styx Engine/3rdparty/GLFW/CMake/GenerateMappings.cmake" mappings.h.in mappings.h"
   DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Nils/Desktop/graphics lib/3rdparty/GLFW/CMakeLists.txt
+# C:/Users/Nils/Desktop/Styx Engine/3rdparty/GLFW/CMakeLists.txt
 # =============================================================================
 
 
@@ -626,7 +626,7 @@ build 3rdparty\GLFW\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}3rdpa
 # Utility command for edit_cache
 
 build 3rdparty\GLFW\docs\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -637,7 +637,7 @@ build 3rdparty\GLFW\docs\edit_cache: phony 3rdparty\GLFW\docs\CMakeFiles\edit_ca
 # Utility command for rebuild_cache
 
 build 3rdparty\GLFW\docs\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Nils\Desktop\graphics lib" -B"C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Nils\Desktop\Styx Engine" -B"C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -655,7 +655,7 @@ build 3rdparty\GLFW\docs\list_install_components: phony
 # Utility command for install
 
 build 3rdparty\GLFW\docs\CMakeFiles\install.util: CUSTOM_COMMAND 3rdparty\GLFW\docs\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -667,7 +667,7 @@ build 3rdparty\GLFW\docs\install: phony 3rdparty\GLFW\docs\CMakeFiles\install.ut
 # Utility command for install/local
 
 build 3rdparty\GLFW\docs\CMakeFiles\install\local.util: CUSTOM_COMMAND 3rdparty\GLFW\docs\all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\graphics lib\out\build\x64-Debug\3rdparty\GLFW\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Nils\Desktop\Styx Engine\out\build\x64-Debug\3rdparty\GLFW\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -677,7 +677,7 @@ build 3rdparty\GLFW\docs\install\local: phony 3rdparty\GLFW\docs\CMakeFiles\inst
 # =============================================================================
 # Target aliases.
 
-build MaLibGraphique: phony MaLibGraphique.exe
+build StyxEngine: phony StyxEngine.exe
 
 build glad: phony glad.lib
 
@@ -697,28 +697,28 @@ build update_mappings: phony 3rdparty\GLFW\src\update_mappings
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Nils/Desktop/graphics lib/out/build/x64-Debug
+# Folder: C:/Users/Nils/Desktop/Styx Engine/out/build/x64-Debug
 
-build all: phony MaLibGraphique.exe glad.lib stb_image.lib 3rdparty\GLFW\all
+build all: phony StyxEngine.exe glad.lib stb_image.lib 3rdparty\GLFW\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Nils/Desktop/graphics lib/out/build/x64-Debug/3rdparty/GLFW
+# Folder: C:/Users/Nils/Desktop/Styx Engine/out/build/x64-Debug/3rdparty/GLFW
 
 build 3rdparty\GLFW\all: phony 3rdparty\GLFW\src\all 3rdparty\GLFW\docs\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Nils/Desktop/graphics lib/out/build/x64-Debug/3rdparty/GLFW/docs
+# Folder: C:/Users/Nils/Desktop/Styx Engine/out/build/x64-Debug/3rdparty/GLFW/docs
 
 build 3rdparty\GLFW\docs\all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Nils/Desktop/graphics lib/out/build/x64-Debug/3rdparty/GLFW/src
+# Folder: C:/Users/Nils/Desktop/Styx Engine/out/build/x64-Debug/3rdparty/GLFW/src
 
 build 3rdparty\GLFW\src\all: phony 3rdparty\GLFW\src\glfw3.lib
 
@@ -729,14 +729,14 @@ build 3rdparty\GLFW\src\all: phony 3rdparty\GLFW\src\glfw3.lib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\CMakeLists.txt C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\CMake\cmake_uninstall.cmake.in C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\CMake\glfw3.pc.in C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\CMake\glfw3Config.cmake.in C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\docs\CMakeLists.txt C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\CMakeLists.txt C$:\Users\Nils\Desktop\graphics$ lib\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\CMakeLists.txt C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\CMake\cmake_uninstall.cmake.in C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\CMake\glfw3.pc.in C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\CMake\glfw3Config.cmake.in C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\docs\CMakeLists.txt C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\CMakeLists.txt C$:\Users\Nils\Desktop\Styx$ Engine\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\CMakeLists.txt C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\CMake\cmake_uninstall.cmake.in C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\CMake\glfw3.pc.in C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\CMake\glfw3Config.cmake.in C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\docs\CMakeLists.txt C$:\Users\Nils\Desktop\graphics$ lib\3rdparty\GLFW\src\CMakeLists.txt C$:\Users\Nils\Desktop\graphics$ lib\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\CMakeLists.txt C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\CMake\cmake_uninstall.cmake.in C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\CMake\glfw3.pc.in C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\CMake\glfw3Config.cmake.in C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\docs\CMakeLists.txt C$:\Users\Nils\Desktop\Styx$ Engine\3rdparty\GLFW\src\CMakeLists.txt C$:\Users\Nils\Desktop\Styx$ Engine\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake: phony
 
 
 #############################################

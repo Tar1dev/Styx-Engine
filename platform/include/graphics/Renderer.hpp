@@ -14,6 +14,14 @@ namespace Styx
         glm::mat4 view;
     } Camera;
 
+    typedef struct
+    {
+        float red;
+        float green;
+        float blue;
+        float alpha;
+    } Color;
+
     class Renderer
     {
     private:
@@ -26,6 +34,7 @@ namespace Styx
         unsigned int indexOffset = 0;
         std::vector<GLuint> textures;
         void resetBatchCache();
+        Color clearColor;
     public:
         static Renderer& getInstance() {
             static Renderer instance;
@@ -37,6 +46,8 @@ namespace Styx
         void clear();
         bool addShader(std::string vertexShaderSourcePath, std::string fragmentShaderSourcePath);
         bool setCurrentShader(ShaderProgram shader);
+
+        void setClearColor(float red, float green, float blue, float alpha);
 
         void drawTexture(Texture2D texture, glm::vec2 coords);
 

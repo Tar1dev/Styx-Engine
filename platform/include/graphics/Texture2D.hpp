@@ -3,6 +3,7 @@
 #include <glad/glad.h>
 #include <stb_image.h>
 #include <iostream>
+#include <optional>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -16,7 +17,7 @@ namespace Styx
         unsigned int ID;
         glm::mat4 trans;
     public:
-        Texture2D();
+        Texture2D(std::optional<std::string> fileName = std::nullopt);
         bool loadFromFile(std::string fileName);
         void applyTransform(glm::mat4 transform);
         glm::mat4 getTransform();

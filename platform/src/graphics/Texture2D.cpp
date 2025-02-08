@@ -2,7 +2,11 @@
 
 using namespace Styx;
 
-Texture2D::Texture2D() {
+Texture2D::Texture2D(std::optional<std::string> fileName) {
+    if (fileName.has_value())
+    {
+        loadFromFile(fileName.value());
+    }
     trans = glm::mat4(1.0f);
 }
 

@@ -9,6 +9,12 @@ using namespace Styx;
 Renderer::Renderer() {
     camera.projection = glm::mat4(1.0f); // Identity matrix
     camera.view = glm::mat4(1.0f);       // Identity matrix
+    clearColor = {
+        .red = 0,
+        .green = 0,
+        .blue = 0,
+        .alpha = 1
+    };
 }
 
 bool Renderer::initialize(int width, int height) {
@@ -59,8 +65,15 @@ bool Renderer::initialize(int width, int height) {
     return true;
 }
 
+void Renderer::setClearColor(float red, float green, float blue, float alpha) {
+    clearColor.red = red;
+    clearColor.green = green;
+    clearColor.blue = blue;
+    clearColor.alpha = alpha;
+}
+
 void Renderer::clear() {
-    glClearColor(0.0, 0.0, 0.0, 1);
+    glClearColor(clearColor.red, clearColor.green, clearColor.blue, clearColor.alpha);
     glClear(GL_COLOR_BUFFER_BIT);
 }
 
@@ -102,9 +115,6 @@ void Renderer::update() {
 
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
-
-
-    // todo: textures batch rendering
 
     // Clear batch data for next frame
     resetBatchCache();

@@ -2,6 +2,8 @@
 #include <graphics/Renderer.hpp>
 #include <graphics/Texture2D.hpp>
 
+#include <core/Application.hpp>
+
 #include <game.hpp>
 
 int main(int argc, char const *argv[])
@@ -22,7 +24,8 @@ int main(int argc, char const *argv[])
     float deltaTime = 0.0f;	// Time between current frame and last frame
     float lastFrame = 0.0f; // Time of last frame
 
-    initGame();
+    Game game;
+    game.init();
 
 
 
@@ -32,7 +35,8 @@ int main(int argc, char const *argv[])
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
-        updateGame(deltaTime);
+        game.draw();
+        game.update(deltaTime);
 
         renderer.clear();
         renderer.update();

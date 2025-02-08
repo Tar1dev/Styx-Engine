@@ -1,8 +1,25 @@
-#pragma once
+#include <core/Application.hpp>
 #include <graphics/Renderer.hpp>
+#include <iostream>
 
-void initGame();
+class Game : public Styx::Application
+{
+private:
+	Styx::Renderer& renderer = Styx::Renderer::getInstance();
+	Styx::Texture2D box;
+public:
+	Game() {};
 
-void updateGame(float dt);
+	void init() override {
+		box = Styx::Texture2D();
+		box.loadFromFile(std::string(RESSOURCES_DIR) + "/textures/container.jpg");
+	}
 
-void closeGame();
+	void update(float dt) override {
+		std::cout << dt << std::endl;
+	}
+
+	void draw() override {
+		renderer.drawTexture(box, glm::vec2(0, 0));
+	}
+};
